@@ -1,7 +1,6 @@
-
 .button{
     border-radius: 2px;
-    background: #FF6464;
+    background: var(--button-bg-primary);
     padding: 15px 20px;
     cursor: pointer;
     transition: opacity 0.3s;
@@ -34,9 +33,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 60px; 
-    margin-top: 0;
+    
 
-    &.primary-color{
+    &.recent-posts__header{
         color: var(--c-natural);
     }
 }
@@ -48,12 +47,105 @@
     margin-top: 0;
 }
 .heading4{
-    color: var(--c-featured);
+    color: var(--c-secondary);
     font-size: 20px;
     font-weight: 400;
     margin-top: 0;
 }
 .inline-flex{
     display: inline-flex;
-    flex-grow: 1;
+    flex-grow: 0;
+}
+@media screen and (max-width: 767px) {
+    .hero__content-wrapper {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .hero__image {
+        order: 1; 
+    }
+    .hero__heading {
+        order: 2;
+    }
+    .paragraph {
+        order: 3; 
+    }
+    .hero__button-wrapper {
+        order: 4; 
+        display: flex;
+        justify-content: center;
+    }
+    .hero__heading{
+        text-align: center;
+    }
+    .hero__photo{
+        display: flex;
+        justify-content: center;
+    }
+    .recent-posts__content-wrapper{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .recent-posts__view-all{
+        display: none;
+    }
+    .recent-posts__content{
+        max-width: 350px;
+    }
+    .recent-posts__heading{
+        justify-content: center;
+    }
+    .heading2.recent-posts__header{
+        text-align: center;    
+    }
+    .featured-works__dividers{  
+        display: flex;
+        flex-shrink: 1;
+    }
+    .featured__photos{
+        aspect-ratio: 339 / 240;
+        height: 240px;
+    }
+    .featured__header{
+        text-align: center;
+    }
+    .featured-works__content-wrapper{
+        flex-wrap: wrap;
+    }
+  
+    // Hamburger attempt.
+    
+    .header{
+        display: none;
+    }
+
+    .hamburger-menu::before,
+    .hamburger-menu::after,
+    .hamburger-menu input{
+        content: "";
+        width: var(--bar-width);
+        height: var(--bar-height);
+        background-color: var(--foreground);
+        border-radius: 9999px;
+    }
+
+    .hamburger-menu{
+        display: flex;
+        flex-direction: column;
+        gap: var(--hamburger-gap);
+        width: max-content;
+        position: absolute;
+        top: var(--hamburger-margin);
+        right: var(--hamburger-margin);
+        z-index: 2;
+    }
+
+    .hamburger-menu input{
+        appearance: none;
+        padding: 0;
+        margin: 0;
+        outline: none;
+        pointer-events: none;
+    }   
 }

@@ -15,143 +15,172 @@
     <title>Document</title>
 </head>
 <body>
-   <header class="header">
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav__items">
+                Works
+            </a>
+            <a href="#" class="nav__items">
+                Blog
+            </a>
+            <a href="#" class="nav__items">
+                Contact
+            </a>
+        </nav>
+   </header>
+
+   <header class="header__mobile">
+        <label class="hamburger-menu">
+            <input type="checkbox">
+        </label>
+        <aside class="sidebar">
+            <nav class="nav">
+                <a href="#" class="nav__items">
+                    Works
+                </a>
+                <a href="#" class="nav__items">
+                    Blog
+                </a>
+                <a href="#" class="nav__items">
+                    Contact
+                </a>
+            </nav>
+        </aside>
+   </header>
+
+
+   <section class="hero">
         <div class="container">
-            <div class="row justify-content-end">
-                <div class="col-10">
-                    <nav class="nav">
-                        <a href="#" class="nav__items">
-                            Works
-                        </a>
-                        <a href="#" class="nav__items">
-                            Blog
-                        </a>
-                        <a href="#" class="nav__items">
-                            Contact
-                        </a>
-                    </nav>
+            <div class="hero__content-wrapper">
+                <div class="hero__content">
+                    <h1 class="hero__heading">Hi, I am John, Creative Technologist</h1>
+                    <p class="paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    <div class="hero__button-wrapper">
+                     <button type="button" class="button">Download Resume</button>
+                    </div>
+                </div>
+                <div class="hero__photo">
+                    <img src="assets/hero.png" alt="Photo" class="hero__image" width="243" height="243">
+                </div>
+            </div>
+        </div>        
+   </section>
+   <section class="recent-posts">
+        <div class="container">
+            <div class="recent-posts__heading">
+                <h3 class="heading2 recent-posts__header">Recent Posts</h3>
+                <a href="#" class="recent-posts__view-all">View All</a>
+            </div>
+            <div class="recent-posts__content-wrapper">
+                <div class="recent-posts__content">
+                        <h2 class="heading1">Making a design system from scratch</h2>
+                        <div class="recent-posts__content-middle">
+                            <span class="heading3 inline-flex">12 Feb 2020</span>
+                            <div class="seperator">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="21" viewBox="0 0 2 21" fill="none">
+                                                    <path d="M1 0V21" stroke="black"/>
+                                </svg>
+                            </div>
+                            <span class="heading3 inline-flex">Design, Pattern</span>
+                        </div>
+                        <p class="pragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+                <div class="recent-posts__content">
+                        <h2 class="heading1">Creating pixel perfect icons in Figma</h2>
+                        <div class="recent-posts__content-middle">
+                            <span class="heading3 inline-flex">12 Feb 2020</span>
+                            <div class="seperator">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="2" height="21" viewBox="0 0 2 21" fill="none">
+                                                <path d="M1 0V21" stroke="black"/>
+                                            </svg>
+                            </div>
+                            <span class="heading3 inline-flex">Figma, Icon Design</span>
+                        </div>
+                        <p class="pragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                 </div>
             </div>
         </div>
-   </header>
-
-   <section class="hero">
-                 <div class="hero__content-wrapper">
-                    <div class="hero__content">
-                        <h1 class="hero__heading">
-                            Hi, I am John,
-                            Creative Technologist
-                        </h1>
+   </section>
+   <section class="featured-works">
+        <div class="container">
+            <h4 class="heading2 featured__header">
+                Featured Works
+            </h4>
+            <div class="featured-works__container">
+                <div class="featured-works__content-wrapper">
+                    <img src="assets/Rectangle 30.png" alt="Photo" class="featured__photos">
+                    <div class="featured-works__content">
+                        <h2 class="featured-works__headlines">
+                            Designing Dashboards
+                        </h2>
+                        <div class="featured-works__content-middle">
+                            <div class="featured-works__year">2020</div>
+                            <h4 class="heading4">Dashboard</h4>
+                        </div>
                         <p class="paragraph">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                         </p>
-                        <button class="button">
-                            Download Resume
-                        </button>
                     </div>
-                    <img src="assets/hero.png" alt="Photo" class="hero__image" width="243" height="243">
                 </div>
-   </section>
-
-   <section class="recent-posts">
-        <div class="recent-posts--headline">
-            <h4 class="heading2 primary-color">Recent Posts</h4>
-            <a href="#" class="recent-posts__view-all">View All</a>
-        </div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-4">
-                
-                        <div class="recent-posts__content">
-                            <h2 class="heading1">Making a design system from scratch</h2>
-                            <div class="recent-posts__content-middle">
-                                <span class="heading3 inline-flex">12 Feb 2020</span>
-                                <div class="seperator">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="21" viewBox="0 0 2 21" fill="none">
-                                        <path d="M1 0V21" stroke="black"/>
-                                    </svg>
-                                </div>
-                                <span class="heading3 inline-flex">Design, Pattern</span>
-                            </div>
-                            <p class="pragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <div class="featured-works__dividers">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="858" height="2" viewBox="0 0 858 2" fill="none">
+                        <path d="M0 1L858 1.00008" stroke="#E0E0E0"/>
+                    </svg>
+                </div>
+                <div class="featured-works__content-wrapper">
+                    <img src="assets/Rectangle 32.png" alt="Photo" class="featured__photos">
+                    <div class="featured-works__content">
+                        <h2 class="featured-works__headlines">
+                            Vibrant Portraits of 2020
+                        </h2>
+                        <div class="featured-works__content-middle">
+                            <div class="featured-works__year">2018</div>
+                            <h4 class="heading4">Ilustration</h4>
                         </div>
+                        <p class="paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                     </div>
-                    <div class="col-4">
-                        
-                        <div class="recent-posts__content">
-                            <h2 class="heading1">Creating pixel perfect icons in Figma</h2>
-                            <div class="recent-posts__content-middle">
-                                <span class="heading3 inline-flex">12 Feb 2020</span>
-                                <div class="seperator">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="21" viewBox="0 0 2 21" fill="none">
-                                        <path d="M1 0V21" stroke="black"/>
-                                    </svg>
-                                </div>
-                                <span class="heading3 inline-flex">Figma, Icon Design</span>
-                            </div>
-                            <p class="pragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+                <div class="featured-works__dividers">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="858" height="2" viewBox="0 0 858 2" fill="none">
+                        <path d="M0 1L858 1.00008" stroke="#E0E0E0"/>
+                    </svg>
+                </div>
+                <div class="featured-works__content-wrapper">
+                    <img src="assets/Rectangle 34.png" alt="Photo" class="featured__photos">
+                    <div class="featured-works__content">
+                        <h2 class="featured-works__headlines">
+                            36 Days of Malayalam type
+                        </h2>
+                        <div class="featured-works__content-middle">
+                            <div class="featured-works__year">2018</div>
+                            <h4 class="heading4">Typography</h4>
                         </div>
+                        <p class="paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                     </div>
                 </div>
-            </div>
-   </section>
-
-   <section class="featured-works">
-        <h4 class="heading2">Featured Works</h4>
-        <div class="featured-works__container">
-            <div class="featured-works__content-wrapper">
-                <img src="https://picsum.photos/246/180" alt="" class="featured__photos">
-                <div class="featured-works__content">
-                    <h2 class="featured-works__headlines">
-                        Designing Dashboards
-                    </h2>
-                    <div class="featured-works__content-middle">
-                        <div class="featured-works__year">2020</div>
-                        <h4 class="heading4">Dashboard</h4>
-                    </div>
-                    <p class="paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                </div>
-            </div>
-            <div class="featured-works__content-wrapper">
-                <img src="https://picsum.photos/246/180" alt="" class="featured__photos">
-                <div class="featured-works__content">
-                    <h2 class="featured-works__headlines">
-                        Vibrant Portraits of 2020
-                    </h2>
-                    <div class="featured-works__content-middle">
-                        <div class="featured-works__year">2018</div>
-                        <h4 class="heading4">Ilustration</h4>
-                    </div>
-                    <p class="paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                </div>
-            </div>
-            <div class="featured-works__content-wrapper">
-                <img src="https://picsum.photos/246/180" alt="" class="featured__photos">
-                <div class="featured-works__content">
-                    <h2 class="featured-works__headlines">
-                        36 Days of Malayalam type
-                    </h2>
-                    <div class="featured-works__content-middle">
-                        <div class="featured-works__year">2018</div>
-                        <h4 class="heading4">Typography</h4>
-                    </div>
-                    <p class="paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <div class="featured-works__dividers">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="858" height="2" viewBox="0 0 858 2" fill="none">
+                        <path d="M0 1L858 1.00008" stroke="#E0E0E0"/>
+                    </svg>
                 </div>
             </div>
         </div>
    </section>
-
    <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__logo-row">
-                <img src="assets/fb.png" alt="Facebook" width="30" height="30" class="logo">
-                <img src="assets/insta.png" alt="Instagram" width="30" height="30" class="logo">
-                <img src="assets/Group.png" alt="Twitter" width="30" height="30" class="logo">
-                <img src="assets/Linkedin.png" alt="Linkedin" width="30" height="30" class="logo">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__logo-row">
+
+                    <img src="assets/fb.png" alt="Facebook" width="30" height="30" class="logo">
+                    <img src="assets/insta.png" alt="Instagram" width="30" height="30" class="logo">
+                    <img src="assets/Group.png" alt="Twitter" width="30" height="30" class="logo">
+                    <img src="assets/Linkedin.png" alt="Linkedin" width="30" height="30" class="logo">
+
+                </div>
+                <h5 class="footer__text">
+                    Copyright ©2020 All rights reserved
+                </h5>
             </div>
-            <h5 class="footer__text">
-                Copyright ©2020 All rights reserved 
-            </h5>
         </div>
    </footer>
     <script src="/scripts.js"></script>
